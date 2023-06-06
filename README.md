@@ -9,6 +9,8 @@ English learning platform that provides free and high-quality learning sources.
 - React Router v6
 - ASP.NET Core
 - Web API Controller
+- REST API
+- Auth with **JWT**
 - Database **SQL**
 - Framer Motion
 - Notion-style Text Editor using **BlockNote**
@@ -19,5 +21,5 @@ English learning platform that provides free and high-quality learning sources.
 
 ### Status: 🚧 In Progress 🚧
 
-## Screenshots
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Quick Demo
+
