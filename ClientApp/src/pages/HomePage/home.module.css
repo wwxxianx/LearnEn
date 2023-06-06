@@ -1,0 +1,248 @@
+.home_container > *:where(:not(:first-child)) {
+    margin-top: 60px;
+}
+
+.hero_container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.hero_description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 16px;
+}
+
+.hero_image {
+    width: 330px;
+}
+
+.hero_subtitle {
+    font-size: var(--f7);
+    font-weight: 500;
+    color: var(--secondary-font-color);
+    width: 400px;
+}
+
+.hero_title {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0px;
+}
+
+.hero_description > *:where(:not(:first-child)) {
+    padding-top: 10px;
+}
+
+.hero_button_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* -------------------------------- */
+/*           Small Banner           */
+/* -------------------------------- */
+.small_banner_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-blue);
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+}
+
+.small_banner_container > * {
+    color: white;
+}
+
+.small_banner_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.small_banner_title > p {
+    font-weight: 500;
+    font-size: var(--f6);
+}
+
+.small_banner_title > img {
+    width: 120px;
+}
+
+.small_banner_subtitle {
+    position: relative;
+    font-size: var(--f8);
+    width: 270px;
+    padding-inline-start: 16px;
+}
+
+/* -------------------------------- */
+/*           Interactive Banner           */
+/* -------------------------------- */
+.banner_1_image {
+    width: 200px;
+    margin-inline: auto;
+}
+
+.banner_1_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding-inline: 20px;
+    padding-top: 20px;
+}
+
+.banner_1_content > h4 {
+    font-weight: 700;
+    font-size: var(--f4);
+    line-height: 10px;
+}
+
+.banner_1_content > p {
+    font-size: var(--f7);
+}
+
+.banner_1_content > button {
+    position: relative;
+    display: flex;
+}
+
+.banner_1_content > button::after {
+    content: url("../../assets/arrow_1_mobile.png");
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -100px;
+}
+
+.banner_2_container {
+    margin-bottom: 70px;
+}
+
+.banner_2_image {
+    width: 350px;
+    margin-inline: auto;
+    padding-left: 60px;
+}
+
+.banner_2_button {
+    position: relative;
+}
+
+.banner_1_content > .banner_2_button::after {
+    content: url("../../assets/arrow_2_mobile.png");
+    position: absolute;
+}
+
+@media screen and (min-width: 860px) {
+    .hero_container {
+        display: flex;
+        flex-direction: row;
+        gap: 70px;
+        justify-content: center;
+        padding-inline: 80px 40px;
+        padding-block: 60px;
+        text-align: start;
+    }
+
+    .hero_description {
+        display: block;
+    }
+
+    .hero_image {
+        width: 600px;
+    }
+
+    .hero_title {
+        font-size: var(--f1);
+    }
+
+    .hero_subtitle {
+        font-size: var(--f4);
+        width: 430px;
+    }
+
+    .small_banner_title {
+        justify-content: center;
+    }
+
+    .small_banner_title > p {
+        font-size: var(--f4);
+    }
+
+    .small_banner_subtitle {
+        font-size: var(--f6);
+        width: 400px;
+        text-align: center;
+    }
+
+    .small_banner_subtitle::after {
+        top: -130px;
+        right: -90px;
+    }
+
+    /* Banner 1 */
+    .banner_1_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .banner_1_image {
+        width: 320px;
+        margin-inline: auto;
+    }
+
+    .banner_1_content {
+        width: 400px;
+        gap: 25px;
+        align-items: start;
+        text-align: start;
+    }
+
+    .banner_1_content > h4 {
+        font-size: var(--f3);
+        line-height: 10px;
+    }
+    
+    .banner_1_content > p {
+        font-size: var(--f6);
+        color: var(--secondary-font-color);
+    }
+
+    .banner_1_content > button::after {
+        content: url("../../assets/arrow_1.png");
+        top: -10px;
+        right: -160px;
+    }
+
+    .banner_2_container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding-left: 30px;
+    }
+    
+    .banner_2_image {
+        width: 500px;
+    }
+
+    .banner_1_content > .banner_2_button::after {
+        content: url("../../assets/arrow_2.png");
+    }
+}

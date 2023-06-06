@@ -1,0 +1,79 @@
+﻿.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    margin-inline: auto;
+    background: #F8F9FA;
+    color: #2b3445;
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    height: 100%;
+    padding-inline: 20px;
+    padding-block: 36px 72px;
+    margin-inline: auto;
+}
+
+.content > *:where(:not(:first-child)) {
+    margin-top: 36px;
+}
+
+.card {
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile_info > p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profile_info > div {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.profile_info > div > p {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.form_title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.form_input {
+    margin-block: 14px;
+}
+
+.submit_button {
+    margin-block: 20px 8px;
+}
+
+.delete_info {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.switch > span {
+    font-weight: 500;
+}

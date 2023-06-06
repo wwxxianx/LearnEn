@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-block: 4px;
+    font-weight: 600;
+}
+
+.container > * {
+    text-align: start;
+    color: #EA0606;
+}

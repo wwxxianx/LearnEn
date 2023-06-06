@@ -1,0 +1,94 @@
+.container {
+    cursor: pointer;
+    width: clamp(200px, 230px, 280px);
+    max-width: 250px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0px 18px 23px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.title {
+    display: -webkit-box;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    color: #415B7C;
+    font-weight: 600;
+    font-size: var(--f4);
+    height: 200px;
+    padding-inline: 20px 16px;
+    border-radius: 8px 8px 0px 0px;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+.content {
+    padding-inline: 16px;
+    padding-block: 20px;
+}
+
+.content > h1 {
+    font-size: 20px;
+    max-width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content > p {
+    /* Estimate time */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 4px;
+}
+
+.content > div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.content > div > p:last-child {
+    font-weight: 500;
+}
+
+.content > button {
+    /* Delete button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #EA0606;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin-top: 10px;
+    background-color: rgb(251, 220, 220);
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.content > button:hover {
+    background-color: rgb(252, 195, 195);
+}
+
+.container:hover {
+    transform: scale(1.015);
+}
+
+@media screen and (max-width: 510px) {
+    .container {
+        width: 100%;
+        max-width: 350px;
+    }
+}

@@ -1,0 +1,63 @@
+.content_wrapper {
+    display: grid;
+    grid-template-columns: 330px auto;
+    gap: 30px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F9F9F9;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-top: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);;
+}
+
+.logo {
+    width: 145px;
+}
+
+.nav_link {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.active_nav_link {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_link:hover > .nav_item {
+    background-color: rgb(243, 246, 249);
+}
+
+.nav_item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-block: 10px;
+    margin-block: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav_item > span {
+    font-size: var(--f3);
+}
+
+.active_nav_link > .nav_item {
+    background-color:#D0DEFA;
+}
+
+.nav_container > button {
+    /* Logout button */
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+

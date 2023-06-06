@@ -1,0 +1,19 @@
+:root {
+    --primary-blue: #1437E9;
+    --secondary-blue: #D0DEFA;
+    --black: #010101;
+    --grey: #49454F;
+    --background: #FFFFFF;
+
+    --f1: 2.875rem;
+    --f2: 2.25rem;
+    --f3: 1.875rem;
+    --f4: 1.625rem;
+    --f5: 1.5rem;
+    --f6: 1.2rem;
+    --f7: 1rem;
+    --f8: 0.85rem;
+    --f9: 0.6rem;
+
+    --secondary-font-color: rgba(0, 0, 0, 0.6)
+}

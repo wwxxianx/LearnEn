@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    margin-top: 16px;
+}
+
+.select {
+    padding-inline: 16px;
+    padding-block: 18px;
+    border: 2px solid #c4cad3;
+    border-radius: 8px;
+    background: none;
+    background-color: white;
+    outline: none;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label {
+    position: absolute;
+    left: 16px;
+    /* transform: translateY(16px); */
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.select:focus {
+    border: 2px solid #1437e9;
+}
+
+.select:focus ~ .label,
+.label[data-transform="true"] {
+    transform: translateY(-12px);
+    background-color: white;
+    padding: 0 0.2em;
+}
+
+.select:focus ~ .label {
+    color: #1437e9;
+}

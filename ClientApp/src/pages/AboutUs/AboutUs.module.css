@@ -1,0 +1,170 @@
+﻿.wrapper {
+    max-width: 1700px;
+    min-height: 100vh;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero_bg {
+    position: absolute;
+    top: -800px;
+    height: 1500px;
+    width: 2000px;
+    border-radius: 10000px;
+    background-color: #E4F4FF;
+    z-index: 0;
+}
+
+.hero_text {
+    z-index: 1;
+}
+
+.hero_title {
+    color: #2F327D;
+    font-size: 42px;
+    font-weight: 700;
+    width: 480px;
+}
+
+    .hero_title span {
+        color: #F48C06;
+    }
+
+.hero_subtitle {
+    width: 390px;
+    line-height: 1.7;
+    color: #2b3445;
+    margin-block: 16px;
+}
+
+.hero_image_wrapper {
+    position: relative;
+    padding-top: 100px;
+}
+
+.hero_image > img {
+    width: 570px;
+}
+
+.statistics_icon {
+    width: 50px;
+    position: absolute;
+    top: 200px;
+    right: 70px;
+    box-shadow: 0px 8px 40px rgba(210, 77, 101, 0.26);
+}
+
+.icon_card {
+    display: flex;
+    gap: 20px;
+    padding: 10px 16px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.69);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4)
+}
+
+    .icon_card > img {
+        width: 40px;
+    }
+
+.icon_card_title {
+    color: #595959;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.icon_card_subtitle {
+    color: #545567;
+    font-size: 14px;
+}
+
+.student_icon_card {
+    position: absolute;
+    top: 270px;
+    left: -70px;
+}
+
+.congratulation_icon_card {
+    position: absolute;
+    top: 370px;
+    right: -20px;
+}
+
+.course_icon_card {
+    padding: 20px 18px;
+    position: absolute;
+    top: 470px;
+    left: -100px;
+}
+
+.course_icon_card_button {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 1000px;
+    background: #D8587E;
+}
+
+.team {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.team > h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.team > p {
+    width: 400px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-inline: auto;
+    margin-top: 8px;
+}
+
+.member_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px
+}
+
+.member {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    width: clamp(200px, 230px, 260px);
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: white;
+    box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+}
+
+    .member > h3 {
+        color: #212B36;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .member > p {
+        color: #919EAB;
+        font-size: 14px;
+    }

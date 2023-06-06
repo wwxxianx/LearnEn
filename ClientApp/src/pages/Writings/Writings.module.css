@@ -1,0 +1,33 @@
+﻿.wrapper {
+    max-width: 1450px;
+    min-height: 100vh;
+    margin-inline: auto;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.filter_container {
+    display: flex;
+    gap: 16px;
+    padding-left: 36px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    flex-wrap: wrap;
+    padding-inline: 20px;
+    margin-block: 20px;
+}
+
+@media screen and (min-width: 820px) {
+    .content {
+        justify-content: flex-start;
+    }
+}
