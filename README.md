@@ -22,5 +22,7 @@ English learning platform that provides free and high-quality learning sources.
 ### Status: 🚧 In Progress 🚧
 
 ## Quick Demo
-https://github.com/wwxxianx/LearnEn/assets/85487844/78d6c160-8dfd-49fd-824a-9c0a628cb6e8
+
+
+https://github.com/wwxxianx/LearnEn/assets/85487844/7827e9f6-5dd5-4025-829e-020913d6e482
 
